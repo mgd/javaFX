@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints ?>
+<?import javafx.scene.layout.HBox?>
+
+<!-- HBox usually used as the child of another layout, not so much for the main screen-->
+<HBox fx:controller="com.fx.hboxlayout.HboxController" xmlns:fx="http://javafx.com/fxml" alignment="top_center"
+      style="-fx-border-color: red; -fx-border-width: 3; -fx-border-style: dashed" spacing="10">
+    <!-- style comment here is great for debuging to figure out area of childrens allocated space-->
+    <padding>
+        <Insets top="10" right="10"/>
+    </padding>
+    <!-- prefWidth used to specify width of boxes-->
+    <Button text="Okay" prefWidth="90"/>
+    <Button text="Cancel" prefWidth="90"/>
+    <Button text="Help" prefWidth="90"/>
+</HBox>
+

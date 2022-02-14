@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints ?>
+<!-- hgap vgap set 10 pixel gap between the rows and columns -->
+<GridPane fx:controller="com.fx.gridpane.GridPaneController" xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10" gridLinesVisible="true">
+    <!--Sets the fist column to 30% of the gridpane and second column to 70% -->
+    <columnConstraints>
+        <ColumnConstraints percentWidth="30.0"/>
+        <ColumnConstraints percentWidth="70.0"/>
+    </columnConstraints>
+    <!-- Need to specify row and column of each button to make sure it does> -->
+    <Button fx:id="buttonOne" text="Button One" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <Button text="Button Two" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+    <Button text="Button Three" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <Button text="Button Really Long Button Four" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <Button text="Button Five" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+</GridPane>

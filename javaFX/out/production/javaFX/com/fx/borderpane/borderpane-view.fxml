@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.ColumnConstraints ?>
+<!-- hgap vgap set 10 pixel gap between the rows and columns -->
+<?import javafx.scene.layout.BorderPane?>
+<BorderPane fx:controller="com.fx.borderpane.BorderPaneController" xmlns:fx="http://javafx.com/fxml"
+            style="-fx-border-color: red; -fx-border-width:3; -fx-border-style: dashed">
+
+    <padding>
+        <Insets bottom="10" right="10"/>
+    </padding>
+
+    <Label fx:id="welcomeText" text=""/>
+    <Button fx:id="Okay" text="Okay"/>
+    <Button fx:id="Cancel" text="Cancel"/>
+    <Button fx:id="Help" text="Cancel"/>
+</BorderPane>
